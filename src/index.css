@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Popins Pro", sans-serif;
+  background-color: #f9f9f9;
+  margin: auto ;
+  padding: auto;
+  display: flex;
+  justify-content: center;
+}
