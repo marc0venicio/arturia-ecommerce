@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { getOrdersFromDB } from '../database/getOrdersFromDB';
+import { Link } from 'react-router-dom';
 
 const OrdersPage = () => {
   const [orders, setOrders] = useState<any[]>([]);
@@ -36,6 +37,12 @@ const OrdersPage = () => {
           ))}
         </div>
       )}
+      <article className="text-2xl font-bold mb-4 prose prose-xl"><Link
+        to="/"
+        className="block mt-4 text-blue-500 hover:underline"
+      >
+        Voltar a lista de produtos
+      </Link></article>
     </div>
   );
 };

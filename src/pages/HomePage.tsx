@@ -14,17 +14,21 @@ const HomePage = () => {
   }, [navigate]);
 
   return (
-    <div className="content" style={{ margin: "auto" }}>
+    <div className="content" style={{ margin: "auto", marginTop: "2rem" }}>
       <div className="container content-center mx-auto my-auto p-4">
+        <div style={{ display: "flex", justifyContent: "space-between" }}>
+           <article className="text-2xl font-bold mb-4 prose prose-lg">
+          Catálogo de Produtos
+        </article>
+        
         <Link
           to="/order-history"
           className="block mt-4 text-blue-500 hover:underline"
         >
           Consultar pedidos anteriores
         </Link>
-        <article className="text-2xl font-bold mb-4 prose prose-lg">
-          Catálogo de Produtos
-        </article>
+        </div>
+       
         <ProductTable />
         <article className="text-2xl font-bold mt-8 prose prose-lg">
           Seu Carrinho
